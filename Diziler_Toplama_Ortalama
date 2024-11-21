@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+	int i,toplam=0,boyut;
+	float ortalama;
+	printf("Kac elemanli bir dizi olusturacaksiniz"); 
+	scanf("%d",&boyut);
+	int dizi[boyut];
+	for (i=0;i<boyut;i++){
+		printf("%d. sayiyi giriniz-- \n\n",i+1);
+		scanf("%d",&dizi[i]);
+		toplam+=dizi[i];}
+	ortalama=toplam/(float)boyut;
+	printf("Dizi elemanlari toplami %d ve ortalamalari %.2f dir. ",toplam,ortalama);
+	return 0;
+}
